@@ -1,31 +1,47 @@
-# Laravel + Livewire Starter Kit
+# Rotina Fácil
 
-## Introduction
+Sistema web para organização da rotina pessoal, permitindo cadastrar categorias e tarefas, acompanhar pendências e visualizar um resumo no dashboard.
 
-Our Laravel + [Livewire](https://livewire.laravel.com) starter kit provides a robust, modern starting point for building Laravel applications with a Livewire frontend.
+## Objetivo
 
-Livewire is a powerful way of building dynamic, reactive, frontend UIs using just PHP. It's a great fit for teams that primarily use Blade templates and are looking for a simpler alternative to JavaScript-driven SPA frameworks like React and Vue.
+O projeto foi desenvolvido para ajudar o usuário a organizar atividades do dia a dia de forma simples, visual e prática.
 
-This Livewire starter kit utilizes Livewire 4, TypeScript, Tailwind, and the [Flux UI](https://fluxui.dev) component library.
+## Funcionalidades
 
-If you are looking for the alternate configurations of this starter kit, they can be found in the following branches:
+- Cadastro e login de usuário
+- Dashboard com resumo das tarefas
+- Cadastro de categorias
+- Cadastro de tarefas
+- Filtros por categoria, prioridade e situação
+- Marcação de tarefa como concluída
+- Foto de perfil
+- Interface personalizada com identidade visual própria
 
-- [workos](https://github.com/laravel/livewire-starter-kit/tree/workos) - if WorkOS is selected for authentication
+## Tecnologias utilizadas
 
-## Official Documentation
+- PHP 8.3
+- Laravel 13
+- Livewire
+- Tailwind CSS
+- Flux UI
+- PostgreSQL (Neon)
 
-Documentation for all Laravel starter kits can be found on the [Laravel website](https://laravel.com/docs/starter-kits).
+## Como executar localmente
 
-## Contributing
+### Requisitos
+- PHP
+- Composer
+- Node.js
+- npm
+- PostgreSQL configurado no Neon
 
-Thank you for considering contributing to our starter kit! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-All contributions to the Starter Kits from now on should be made through [Maestro](https://github.com/laravel/maestro).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## License
-
-The Laravel + Livewire starter kit is open-sourced software licensed under the MIT license.
+### Passos
+```bash
+git clone URL_DO_REPOSITORIO
+cd rotina-facil
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan storage:link
